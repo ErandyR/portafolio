@@ -1,0 +1,27 @@
+.color-contorno {
+    border: 2px solid #a7ba9f;
+}
+
+.navbar{
+margin-bottom: 0px;
+}
+
+.color-fondo {
+    background-color: #fefff0;
+}
+
+.fondo{ 
+    margin-top: 4.5%;
+    font-family: 'Sacramento', cursive;
+    font-size: 220%;
+    font-weight: bold;
+    color: #547972;
+}
+
+.colorfondoImagen {
+    background-color: #e6c9a1;
+}
+
+.anchoImagen {
+    width: 100%;
+}
