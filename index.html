@@ -12,32 +12,107 @@
 
 <body>
     <section class="portafolio">
-        <nav class="navbar navbar-default navbar-static-top color-contorno forma-contenedor color-fondo">
-            <div class="container">
-                <a class="navbar-brand col-md-2 text-center" href="#">
-                    <p>Sobre mi</p>
-                </a>
-                <a class="navbar-brand col-md-2 text-center" href="#">
-                    <p>Habilidades</p>
-                </a>
-                <a class="navbar-brand col-md-4 text-center" href="#">
-                    <p class="fondo">ErandyR</p>
-                </a>
-                <a class="navbar-brand col-md-2 text-center" href="#">
-                    <p>Proyectos</p>
-                </a>
-                <a class="navbar-brand col-md-2 text-center" href="#">
-                    <p>Contacto</p>
-                </a>
+        <!--seccion nav-->
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Desplegar navegación</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand fondo" href="#">ErandyR</a>
+            </div>
+
+            <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+               otro elemento que se pueda ocultar al minimizar la barra -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li class="active"><a href="#">Proyectos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
             </div>
         </nav>
+        <!-- seccion portada-->
         <div class="container-fluid colorfondoImagen">
             <div class="row">
-               <div class="col-md-offset-1 col-md-8">
-                   <img src="#" alt="fondo" clas="anchoImagen">
-               </div>
+                <div class="row col-md-12 contenedorImagen centrar-texto">
+                    <p class="colorBlancoPortada fontSize centrar-texto text-center">Hola! Soy Erandy,</p>
+                    <p class="colorBlancoPortada centrar-texto text-center sizeText">Front-End Developer Junior</p>
+                    <button type="button" class="btn btn-primary btn-sm colorBlancoPortada anchoBoton borde colorFondoBoton bajar">Contactame
+                    </button>
+                    <a href="#" class="colorBlancoPortada centrar-texto text-center bajar">Conoce mi trabajo <span class="glyphicon glyphicon-menu-down"></span></a>
+                </div>
             </div>
         </div>
+        <!--seccion habilidades-->
+        <div class="container-fluid colorFondoHabilidades">
+            <h1 class="colorH1Habilidades text-center">
+                Habilidades
+            </h1>
+            <!--            contenedor de habilidades tecnicas-->
+            <div class="row">
+                <!--               habilidad HTML-->
+                <div class="row col-md-4">
+                    <img src="assets/img/html.png" alt="html-imagen" class="col-md-offset-2 col-md-8">
+                    <span class="glyphicon glyphicon-menu-down col-md-offset-8"></span>
+                </div>
+                <!--                habilidad css3-->
+                <div class="row col-md-4">
+                    <img src="assets/img/css3.png" alt="imagen-css3" class="col-md-offset-2 col-md-9">
+                    <span class="glyphicon glyphicon-menu-down col-md-offset-8" id="mostrarCss"></span>
+                    <div class="mostrarCss">
+                        <div class="col-md-12">
+                            <div class="progress col-md-5 centrar">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped barraCss" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                            <p class="col-md-12 text-center">Manejo intermedio de CSS3, al igual que algunos frameworks como:</p>
+                        </div>
+                        <!--contenedor habilidades especificas bootstrap-->
+                        <div class="row col-md-12">
+                            <div class="row contHabEsp col-md-6">
+                                <img src="assets/img/bootstrap.png" alt="imagen-bootstrap" class="col-md-12">
+                            </div>
+                            <div class="progress col-md-5">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped barraCss" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                            <p>Intermedio</p>
+                        </div>
+                        <!--contenedor habilidades especificas materialize-->
+                        <div class="row col-md-12 espacioTop">
+                            <div class="row contHabEsp col-md-6 espacioTop">
+                                <img src="assets/img/materialize.png" alt="imagen-materialize" class="col-md-12">
+                            </div>
+                            <div class="progress col-md-5">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped barraCss" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                            <p class="col-md-5">Basico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                habilidad javaScript-->
+                <div class="row col-md-4">
+                    <img src="assets/img/javascript.png" alt="imagen-javascript" class="col-md-offset-2 col-md-8 anchoImagenJs">
+                    <span class="glyphicon glyphicon-menu-down col-md-offset-9"></span>
+                </div>
+            </div>
+        </div>
+        <footer class="colorFondoFooter">
+            <div>
+                <h3 class="sinMargen font text-center">ErandyR</h3>
+            </div>
+        </footer>
     </section>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
