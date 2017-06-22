@@ -64,17 +64,21 @@ margin-bottom: 0px;
 .anchoBoton{
     width: 10%;
 }
+
 .colorFondoBoton{
     background-color: #7192a9;
-    background: rgb(20,50,100);
-    opacity: 0.4;
+    background: rgba(20,50,100,.4);
+   
 }
+
 .bajar {
     margin-top: 2%;
 }
+
 .colorFondoHabilidades{
     background-color: #d8dccd;
 }
+
 .colorH1Habilidades{
     color: #89a5b5;
 }
@@ -112,4 +116,35 @@ margin-bottom: 0px;
     font-size: 220%;
     font-weight: bold;
     color: #d8dccd;;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.paddingTop {
+    padding-top: 5%;
+}
+.colorIcono {
+    color: aliceblue;
+}
+.anchoIcono {
+    font-size: 300%;
+}
+.espacioEntreIconos{
+    margin-right: 3%;
+}
+.espacioBottom{
+    margin-bottom: 4%;
+}
+.colorFondoProyectos {
+    background-color: #d1e4b6;
+}
+.sinMargen {
+    margin-top: 0;
+    padding-top: 0;
 }
