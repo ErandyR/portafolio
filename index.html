@@ -14,9 +14,9 @@
 <body>
     <section class="portafolio">
         <!--seccion nav-->
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <!-- El logotipo y el icono que despliega el menú se agrupan
-       para mostrarlos mejor en los dispositivos móviles -->
+              para mostrarlos mejor en los dispositivos móviles -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                       <span class="sr-only">Desplegar navegación</span>
@@ -31,27 +31,59 @@
                otro elemento que se pueda ocultar al minimizar la barra -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li class="active"><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li class="active"><a href="#seccionSobreMi">Sobre mi</a></li>
+                    <li><a href="#seccionHabilidades">Habilidades</a></li>
+                    <li class="active"><a href="#seccionProyectos">Proyectos</a></li>
+                    <li><a href="#seccionContacto">Contacto</a></li>
                 </ul>
             </div>
         </nav>
         <!-- seccion portada-->
         <div class="container-fluid colorfondoImagen">
-            <div class="row">
-                <div class="row col-md-12 contenedorImagen centrar-texto">
-                    <p class="colorBlancoPortada fontSize centrar-texto text-center">Hola! Soy Erandy,</p>
-                    <p class="colorBlancoPortada centrar-texto text-center sizeText">Front-End Developer Junior</p>
-                    <button type="button" class="btn btn-primary btn-sm colorBlancoPortada anchoBoton borde colorFondoBoton bajar">Contactame
-                    </button>
-                    <a href="#" class="colorBlancoPortada centrar-texto text-center bajar">Conoce mi trabajo <span class="glyphicon glyphicon-menu-down"></span></a>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="row">
+                    <div class="row col-md-12 contenedorImagen centrar-texto">
+                        <p class="colorBlancoPortada fontSize centrar-texto text-center">Hola! Soy Erandy,</p>
+                        <p class="colorBlancoPortada centrar-texto text-center sizeText">Front-End Developer Junior</p>
+                        <button type="button" class="btn btn-primary btn-sm colorBlancoPortada anchoBoton borde colorFondoBoton bajar">
+                          <a href="#seccionContacto" class="sinDecoracion colorBlancoPortada">Contactame</a>
+                        </button>
+                        <a href="#seccionProyectos" class="colorBlancoPortada centrar-texto text-center bajar">Conoce mi trabajo <span class="glyphicon glyphicon-menu-down"></span></a>
+                    </div>
                 </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                    <div class="row col-md-12 contenedorImagen2 centrar-texto" id="seccionSobreMi">
+                        <p class="colorGrisPortada fontSize centrar-texto text-center">Un poco sobre mi,</p>
+                        <p class="colorGrisPortada centrar-texto text-center sizeText">Soy Erandy Ramirez, front-end developer Junior</p>
+                        <a href="#seccionProyectos" class="colorBlancoPortada centrar-texto text-center bajar">Conoce mi trabajo <span class="glyphicon glyphicon-menu-down"></span></a>
+                    </div>
+                </div>
+              </div>
             </div>
+
+              <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
         <!--seccion habilidades-->
-        <div class="container-fluid colorFondoHabilidades">
+        <div class="container-fluid colorFondoHabilidades" id="seccionHabilidades">
             <h1 class="colorH1Habilidades text-center">
                 Habilidades
             </h1>
@@ -59,7 +91,7 @@
             <div class="row">
                 <!--               habilidad HTML-->
                 <div class="row col-md-4">
-                    <img src="assets/img/html.png" alt="html-imagen" class="col-md-offset-2 col-md-8" id="img-html ">
+                    <img src="assets/img/html.png" alt="html-imagen" class="col-md-offset-2 col-md-8 col-xs-offset-3 col-xs-6" id="img-html">
                     <span class="glyphicon glyphicon-menu-down col-md-offset-8" id="mostrarHtml"></span>
                     <div class="mostrarHtml">
                         <div class="col-md-12">
@@ -74,23 +106,23 @@
                 </div>
                 <!--                habilidad css3-->
                 <div class="row col-md-4">
-                    <img src="assets/img/css3.png" alt="imagen-css3" class="col-md-offset-2 col-md-9" id="img-css">
-                    <span class="glyphicon glyphicon-menu-down col-md-offset-8" id="mostrarCss"></span>
+                    <img src="assets/img/css3.png" alt="imagen-css3" class="col-md-offset-2 col-md-9 col-xs-offset-3 col-xs-6" id="img-css">
+                    <span class="glyphicon glyphicon-menu-down col-md-offset-8 col-xs-offset-3 col-xs-6" id="mostrarCss"></span>
                     <div class="mostrarCss">
                         <div class="col-md-12">
-                            <div class="progress col-md-5 centrar">
+                            <div class="progress col-md-5 centrar col-xs-5">
                                 <div class="progress-bar progress-bar-warning progress-bar-striped barraCss" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                     <span class="sr-only">60% Complete (warning)</span>
                                 </div>
                             </div>
-                            <p class="col-md-12 text-center">Manejo intermedio de CSS3, al igual que algunos frameworks como:</p>
+                            <p class="col-md-12 col-xs-12 text-center">Manejo intermedio de CSS3, al igual que algunos frameworks como:</p>
                         </div>
                         <!--contenedor habilidades especificas bootstrap-->
-                        <div class="row col-md-12">
-                            <div class="row contHabEsp col-md-6">
-                                <img src="assets/img/bootstrap.png" alt="imagen-bootstrap" class="col-md-12">
+                        <div class="row col-md-12 col-xs-12">
+                            <div class="row contHabEsp col-md-6 col-xs-6">
+                                <img src="assets/img/bootstrap.png" alt="imagen-bootstrap" class="col-md-12 col-xs-12">
                             </div>
-                            <div class="progress col-md-5">
+                            <div class="progress col-md-5 col-xs-5">
                                 <div class="progress-bar progress-bar-warning progress-bar-striped barraCss" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                     <span class="sr-only">60% Complete (warning)</span>
                                 </div>
@@ -114,7 +146,7 @@
 
                 <!--                habilidad javaScript-->
                 <div class="row col-md-4">
-                    <img src="assets/img/javascript.png" alt="imagen-javascript" class="col-md-offset-2 col-md-8 anchoImagenJs" id="img-js">
+                    <img src="assets/img/javascript.png" alt="imagen-javascript" class="col-md-offset-2 col-md-8 col-xs-offset-2 col-xs-6 anchoImagenJs" id="img-js">
                     <span class="glyphicon glyphicon-menu-down col-md-offset-9" id="mostrarJs"></span>
                     <div class="mostrarJs">
                         <div class="col-md-12">
@@ -141,15 +173,15 @@
                 </div>
             </div>
         </div>
-        <!--        seccion Proyectos-->
-        <div class="colorFondoProyectos sinMargen">
+        <!--seccion Proyectos-->
+        <div class="colorFondoProyectos sinMargen" id="seccionProyectos">
             <h2 class="text-center sinMargen">Mis Proyectos</h2>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="https://dummyimage.com/200x150/afd3d6/ccbde6" alt="imagen1">
+                        <img src="assets/img/labcar.png" alt="lab-car">
                         <div class="caption">
-                            <h3 class="text-center">Proyecto 1</h3>
+                            <h3 class="text-center">LabCar</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsa voluptatibus reiciendis eius soluta nesciunt magnam explicabo incidunt repellat, sequi ab cumque inventore vero, autem, quae odit fugiat commodi facere!</p>
                             <p><a href="#" class="btn btn-primary" role="button">Ver Proyecto</a> <a href="#" class="btn btn-default" role="button">Ir al código</a></p>
                         </div>
@@ -157,9 +189,9 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="https://dummyimage.com/200x150/afd3d6/ccbde6" alt="imagen2">
+                        <img src="assets/img/passeante.png" alt="imagen2" class="anchoImgPasseante">
                         <div class="caption">
-                            <h3 class="text-center">Proyecto 2</h3>
+                            <h3 class="text-center">Passeante</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsa voluptatibus reiciendis eius soluta nesciunt magnam explicabo incidunt repellat, sequi ab cumque inventore vero, autem, quae odit fugiat commodi facere!</p>
                             <p><a href="#" class="btn btn-primary" role="button">Ver Proyecto</a> <a href="#" class="btn btn-default" role="button">Ir al código</a></p>
                         </div>
@@ -167,31 +199,45 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="https://dummyimage.com/200x150/afd3d6/ccbde6" alt="imagen3">
+                        <img src="https://dummyimage.com/200x150/afd3d6/ccbde6" alt="tengo-hambre">
                         <div class="caption">
-                            <h3 class="text-center">Proyecto 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsa voluptatibus reiciendis eius soluta nesciunt magnam explicabo incidunt repellat, sequi ab cumque inventore vero, autem, quae odit fugiat commodi facere!</p>
+                            <h3 class="text-center">TengoHambre!</h3>
+                            <p>TengoHambre! Es un proyecto de geocolocacion, para encontrar tu restaurante favorito!</p>
                             <p><a href="#" class="btn btn-primary" role="button">Ver Proyecto</a> <a href="#" class="btn btn-default" role="button">Ir al código</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--        seccion formulario-->
-        <div>
-            <form class="form-inline">
-                <div class="form-group">
-                    <label for="exampleInputName2">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+        <!--seccion formulario-->
+        <div id="seccionContacto">
+          <h3 class="text-center espacioTop">Trabajemos juntos!!</h3>
+            <form class="form row espacioArriba">
+                <div class="form-group col-md-offset-2 col-md-4">
+                    <label for="nombre">Name *</label>
+                    <input type="text" class="form-control ancho" id="nombre" placeholder="Nombre">
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail2">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                <div class="form-group col-md-4">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
                 </div>
-                <button type="submit" class="btn btn-default">Send invitation</button>
+                <div class="form-group col-md-offset-2 col-md-4">
+                    <label for="numeroTelefonico">Numero Telefonico</label>
+                    <input type="text" class="form-control" id="numeroTelefonico" placeholder="55">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="sitioWeb">Sitio Web</label>
+                    <input type="text" class="form-control" id="sitioWeb">
+                </div>
+                <div class="form-group col-md-offset-2 col-md-8">
+                    <label for="sitioWeb">Cuentame sobre tu proyecto</label>
+                    <textarea name="textarea" rows="8" cols="80" class="form-control" id="proyecto"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-default col-md-offset-8 espacioBottom espacioArriba">Enviar datos</button>
             </form>
         </div>
-        <!--       seccion footer-->
+        <!--seccion footer-->
         <footer class="colorFondoFooter sinMargen">
             <div>
                 <p class="paddingTop font text-center">ErandyR</p>

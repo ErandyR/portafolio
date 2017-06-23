@@ -6,6 +6,7 @@ var cargarPagina = function() {
     habilidadesCss();
     habilidadesJs();
     habilidadesHtml();
+    $('.carousel').carousel();
 }
 
 var habilidadesCss = function() {
@@ -17,7 +18,7 @@ var habilidadesCss = function() {
 }
 
 var habilidadesJs = function() {
-    contenedorHabilidadJs.css("display", "none");    
+    contenedorHabilidadJs.css("display", "none");
      var $flecha2 = $("#mostrarJs");
     $flecha2.click(mostrarHabilidadJs);
     var $imgJs = $("#img-js");
@@ -45,7 +46,7 @@ var mostrarHabilidadCss = function() {
         contenedorHabilidadCss.css("display", "none");
         contador1 = 0;
     }
-    
+
     console.log(contenedorHabilidadCss);
 }
 

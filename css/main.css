@@ -1,4 +1,6 @@
-
+body {
+  padding-top: 60px;
+}
 .color-contorno {
     border: 2px solid #a7ba9f;
 }
@@ -11,7 +13,7 @@ margin-bottom: 0px;
     background-color: #fefff0;
 }
 
-.fondo{ 
+.fondo{
     margin-top: 4.5%;
     font-family: 'Sacramento', cursive;
     font-size: 220%;
@@ -37,14 +39,50 @@ margin-bottom: 0px;
     background-size: cover;
     background-position: bottom;
 }
+.contenedorImagen2 {
+    background-image: url("../assets/img/miImagen.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .colorBlancoPortada{
     color: aliceblue;
     text-decoration-color: aliceblue;
 }
 
-.fontSize {
-    font-size: 340%;
+@media  (min-width: 1021px) {
+  .fontSize {
+      font-size: 340%;
+  }
+  .anchoBoton{
+      width: 10%;
+  }
+  .sizeText {
+      font-size: 160%;
+  }
 }
+@media (max-width: 1020px) {
+  .fontSize {
+      font-size: 290%;
+  }
+  .anchoBoton{
+      width: 20%;
+  }
+  .sizeText {
+      font-size: 160%;
+  }
+}
+@media (max-width: 480px) {
+  .fontSize {
+      font-size: 240%;
+  }
+  .anchoBoton {
+      width: 20%;
+  }
+}
+
 
 .centrar-texto{
     display: flex;
@@ -53,22 +91,18 @@ margin-bottom: 0px;
     flex-direction: column;
 }
 
-.sizeText {
-    font-size: 160%;
-}
+
 
 .borde {
     border: 2px solid #d8dccd;
 }
 
-.anchoBoton{
-    width: 10%;
-}
+
 
 .colorFondoBoton{
     background-color: #7192a9;
     background: rgba(20,50,100,.4);
-   
+
 }
 
 .bajar {
@@ -147,4 +181,18 @@ margin-bottom: 0px;
 .sinMargen {
     margin-top: 0;
     padding-top: 0;
+}
+
+.anchoImgPasseante {
+  width: 80%;
+}
+
+.espacioArriba {
+  margin-top: 2%;
+}
+.sinDecoracion {
+  text-decoration: none;
+}
+.colorGrisPortada {
+  color: #CBDEE1;
 }
